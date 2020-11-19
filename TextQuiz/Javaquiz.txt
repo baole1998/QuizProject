@@ -1,0 +1,11 @@
+Câu 1: Kích thước 1 char là bao nhiêu ?
+A: 4 bit
+B: 8 bit
+C: 12 bit
+D: 16 bit
+
+Câu 2: Một class không thể được khai báo ở chế độ ?
+A: Static
+B: Default
+C: Private
+D: Public
