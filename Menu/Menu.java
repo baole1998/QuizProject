@@ -2,8 +2,11 @@ package Quiz_project.Menu;
 
 import java.util.Scanner;
 
+/**
+ * Hiển thị menu
+ */
 public class Menu {
-    public void menu(){
+    public static void menu(){
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.println("__________MENU__________");
@@ -22,7 +25,7 @@ public class Menu {
                     checkTest.checkAgain();
                     break;
                 case 3:
-                    System.out.println("Bye!");
+                    System.out.println("ByeBye!");
                     break;
                 default:
                     System.out.println("Hãy chọn lại!");
@@ -36,3 +39,4 @@ public class Menu {
         }
     }
 }
+// STOPSHIP: 25-Nov-20
