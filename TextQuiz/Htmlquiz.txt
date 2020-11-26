@@ -1,0 +1,11 @@
+Câu 1: Sử dụng thẻ nào để chèn ảnh ?
+A: <img>
+B: <div>
+C: <span>
+D: <p>
+
+Câu 2: Sử dụng thẻ nào để chia màn hình thành 12 cột ?
+A: <row> & <col>
+B: <col-2> & <p>
+C: <p> & <div>
+D: <row> & <span>
