@@ -14,15 +14,20 @@ public class DoTest {
             switch (n){
                 case 1:
                     //Đọc file đề bài Java
-                    ReadFileTest.readFileTest("src/Quiz_project/Menu/TestJava__Basic.txt");
+//                    ReadFileTest.readFileTest("src/Quiz_project/Menu/TestJava__Basic.txt");
+                    ReadFileTest.readFileJava();
+
                     System.out.println("Mời bạn nhập đáp án :");
-                    Answer.answer = scanner.next();
+                    Answer.answer = scanner.next().toUpperCase();
                     Answer.saveAnswer();
                     break;
                 case 2:
                     //Đọc file đề bài HTML
-                    ReadFileTest.readFileTest("src/Quiz_project/Menu/TestHTML__Basic.txt");
+//                    ReadFileTest.readFileTest("src/Quiz_project/Menu/TestHTML__Basic.txt");
+                    ReadFileTest.readFileHTML();
                     System.out.println("Mời bạn nhập đáp án :");
+                    Answer.answer = scanner.next().toUpperCase();
+                    Answer.saveAnswer();
                     break;
                 case 3:
                     System.out.println("ByeBye!");
