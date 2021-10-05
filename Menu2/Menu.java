@@ -1,4 +1,4 @@
-package Quiz_project.Menu;
+package Quiz_project.Menu2;
 
 import java.util.Scanner;
 

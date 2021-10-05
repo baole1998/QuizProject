@@ -1,17 +1,18 @@
-package Quiz_project.Menu;
+package Quiz_project.Menu2;
 
-public abstract class User {
+public class User {
     protected String user_name;
     protected int score;
-    protected String level;
+    protected int level;
 
-    public User(String user_name, int score) {
+    public User(String user_name, int score, int level) {
         this.user_name = user_name;
         this.score = score;
+        this.level = level;
     }
 
+
     /**
-     *
      * @return
      */
     public String getUser_name() {
@@ -22,18 +23,25 @@ public abstract class User {
         this.user_name = user_name;
     }
 
-    public int getScore() {
+    public Integer getScore() {
         return score;
     }
 
-    public void setScore(int score) {
+    public void setScore(Integer score) {
         this.score = score;
     }
 
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
 
     @Override
     public String toString() {
-        return "User_Information{"  + user_name + '\'' + "score :" + score +
+        return "User_Information{" + user_name + '\'' + "score :" + score + "level :" + level +
                 '}';
     }
 }
