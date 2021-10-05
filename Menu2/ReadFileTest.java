@@ -1,4 +1,4 @@
-package Quiz_project.Menu2;
+package Quiz_project.Menu;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -13,23 +13,24 @@ public class ReadFileTest {
     public static List<String> readFileTest(String fileName) {
 
         List<String> lines = Collections.emptyList();
-        try {
+        try
+        {
             lines = Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8);
-        } catch (IOException e) {
+        }
+        catch (IOException e)
+        {
             e.printStackTrace();
         }
         return lines;
     }
-
-    public static void readFileJava() {
-        List l = readFileTest("src/Quiz_project/Menu2/TestJava__Basic.txt");
+    public static void readFileJava(){
+        List l = readFileTest("src/Quiz_project/Menu/TestJava__Basic.txt");
         Iterator<String> itr = l.iterator();
         while (itr.hasNext())
             System.out.println(itr.next());
     }
-
-    public static void readFileHTML() {
-        List l = readFileTest("src/Quiz_project/Menu2/TestHTML__Basic.txt");
+    public static void readFileHTML(){
+        List l = readFileTest("src/Quiz_project/Menu/TestHTML__Basic.txt");
         Iterator<String> itr = l.iterator();
         while (itr.hasNext())
             System.out.println(itr.next());
