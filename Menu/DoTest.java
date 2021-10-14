@@ -1,5 +1,7 @@
 package Quiz_project.Menu;
 
+import Quiz_project.Menu2.Menu;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -55,7 +57,7 @@ public class DoTest {
                     Answer = scanner.next();
                     break;
                 case 0:
-                    Menu.main();
+                    Menu.menu();
                     break;
                 default:
                     System.out.println("Hãy chọn lại!");
